@@ -16,9 +16,9 @@ public class Main {
             System.out.println("Digite uma opção de saída válida, JSON ou HTML: ");
             formatoMensagem = in.nextLine();
         }
-        in.close();
         String mensagem = retornaMensagemComFormatoEscolhido(nome, email, formatoMensagem);
         System.out.println(mensagem);
+        in.close();
     }
 
     private static String retornaMensagemComFormatoEscolhido(String nome, String email, String formatoMensagem) {
